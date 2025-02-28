@@ -90,7 +90,10 @@
                             <div class="main-header-three__top-social">
                                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><img src="images/icon/Frame.png" alt=""></a>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M8.30509 5.92804L13.4048 0H12.1964L7.76825 5.14724L4.23153 0H0.152344L5.50056 7.78354L0.152344 14H1.36089L6.03709 8.56434L9.77212 14H13.8513L8.30479 5.92804H8.30509ZM6.64982 7.85211L6.10793 7.07705L1.79635 0.909771H3.6526L7.1321 5.88696L7.67399 6.66202L12.1969 13.1316H10.3407L6.64982 7.85241V7.85211Z" fill="white"/>
+                                  </svg>
+                                </a>
                                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                             </div>
                         </div>
@@ -111,33 +114,31 @@
                                         <a href="#">Home</a>
                                         <ul class="sub-menu">
                                             <li><a href="index.html">Home One</a></li>
-                                            <li><a href="#">Home Two</a></li>
+                                            <li><a href="index2.html">Home Two</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#">About Us</a>
+                                        <a href="about.html">About Us</a>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#">Services</a>
                                         <ul class="sub-menu">
-                                            <li><a href="#">Service</a></li>
-                                            <li><a href="#">Service Details</a></li>
+                                            <li><a href="service.html">Service</a></li>
+                                            <li><a href="service-details.html">Service Details</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#">Project</a>
                                         <ul class="sub-menu">
-                                            <li><a href="#">Team</a></li>
-                                            <li><a href="#">Team Details</a></li>
-                                            <li><a href="#">Project</a></li>
-                                            <li><a href="#">Project Details</a></li>
+                                            <li><a href="project.html">Project</a></li>
+                                            <li><a href="project-details.html">Project Details</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#">Page</a>
                                         <ul class="sub-menu">
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Blog Details</a></li>
+                                            <li><a href="team.html">Team</a></li>
+                                            <li><a href="#">Team Details</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
@@ -191,7 +192,7 @@
                         <h2 class="main-slider-three__title">Exceptional <br> Care Close to<br> Home</h2>
                         <div class="main-slider__btn-and-video-box">
                             <div class="main-slider__btn-box">
-                                <a href="contact.html" class="thm-btn main-slider__btn">Read More</a>
+                                <a href="#" class="thm-btn main-slider__btn">Read More</a>
                             </div>
                             <div class="main-slider__video-link">
                                 <a href="https://www.youtube.com/watch?v=T_AaXmvD7hU" class="video-popup">
@@ -285,7 +286,7 @@
     <section class="about-three">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6">
                     <div class="about-three__left">
                         <div class="about-three__img wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                             <img src="images/about/about-three-img-1.png" alt="About Image">
@@ -306,14 +307,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6">     
                     <div class="about-three__right">
                         <div class="section-title-three text-left">
                             <div class="section-title-three__tagline-box">
                                 <img src="images/resources/Section logo.png" alt="Section Logo">
                                 <p class="section-title-three__tagline">About US</p>
                             </div>
-                            <h2 class="section-title-three__title about">Dedicated to Your Well-Being</h2>
+                            <h2 class="section-title-three__title about">Dedicated to Your  are Well-Being</h2>
                         </div>
                         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
@@ -548,175 +549,274 @@
                         <h2 class="section-title-three__title feature">Your Journey to Health <br> Begins Here</h2>
                     </div>
                 </div>
-                <div class="features_slider">
-                    <div class="features-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="# "><img src="images/features/img-01.png" alt=""></a></figure>
-                                <span class="icon-share-2"><i class="fa-solid fa-share-nodes"></i></span>
+                <div class="features_slider row">
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="features-block">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <img src="images/features/img-01.png" alt="">
+                                </div>
+                                <div class="info-box">
+                                    <ul>
+                                        <li>
+                                            <span class="designation">Dental Surgeon</span>
+                                            <h4 class="name"><a href="#">Dr.Abu Rayhan</a></h4>
+                                        </li>
+                                        <li>
+                                            <span class="icon-share-2"><i class="fa-solid fa-share-nodes"></i></span>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <div class="social-links">
                                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M8.30509 5.92804L13.4048 0H12.1964L7.76825 5.14724L4.23153 0H0.152344L5.50056 7.78354L0.152344 14H1.36089L6.03709 8.56434L9.77212 14H13.8513L8.30479 5.92804H8.30509ZM6.64982 7.85211L6.10793 7.07705L1.79635 0.909771H3.6526L7.1321 5.88696L7.67399 6.66202L12.1969 13.1316H10.3407L6.64982 7.85241V7.85211Z" fill="white"/>
+                                        </svg>
+                                    </a>
                                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <span class="icon-share-2 icon"><i class="fa-solid fa-share-nodes"></i></span>
+                                    <span><i class="fa-solid fa-share-nodes"></i></span>
                                 </div>
-                            </div>
-                            <div class="info-box">
-                                <span class="designation">Dental Surgeon</span>
-                                <h4 class="name"><a href="#">Dr.Abu Rayhan</a></h4>
                             </div>
                         </div>
                     </div>
-                    <div class="features-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="# "><img src="images/features/img-2.png" alt=""></a></figure>
-                                <span class="icon-share-2"><i class="fa-solid fa-share-nodes"></i></span>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="features-block">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <img src="images/features/img-2.png" alt="">
+                                </div>
+                                <div class="info-box">
+                                    <ul>
+                                        <li>
+                                            <span class="designation">CEO</span>
+                                            <h4 class="name"><a href="#">Dr.David Hakin</a></h4>
+                                        </li>
+                                        <li>
+                                            <span class="icon-share-2"><i class="fa-solid fa-share-nodes"></i></span>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <div class="social-links">
                                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M8.30509 5.92804L13.4048 0H12.1964L7.76825 5.14724L4.23153 0H0.152344L5.50056 7.78354L0.152344 14H1.36089L6.03709 8.56434L9.77212 14H13.8513L8.30479 5.92804H8.30509ZM6.64982 7.85211L6.10793 7.07705L1.79635 0.909771H3.6526L7.1321 5.88696L7.67399 6.66202L12.1969 13.1316H10.3407L6.64982 7.85241V7.85211Z" fill="white"/>
+                                        </svg>
+                                    </a>
                                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"> <span class="icon-share-2 icon"><i class="fa-solid fa-share-nodes"></i></span></a>
+                                    <span><i class="fa-solid fa-share-nodes"></i></span>
                                 </div>
-                            </div>
-                            <div class="info-box">
-                                <span class="designation">Dental Surgeon</span>
-                                <h4 class="name"><a href="#">Dr.Abu Rayhan</a></h4>
                             </div>
                         </div>
                     </div>
-                    <div class="features-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="# "><img src="images/features/img-3.png" alt=""></a></figure>
-                                <span class="icon-share-2"><i class="fa-solid fa-share-nodes"></i></span>
-                                <div class="social-links">
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="features-block">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <img src="images/features/img-3.png" alt="">
+                                </div>
+                                <div class="info-box last-item">
+                                    <ul>
+                                        <li>
+                                            <span class="designation">Dental Care</span>
+                                            <h4 class="name"><a href="#">Dr.Dianne Russell</a></h4>
+                                        </li>
+                                        <li>
+                                            <span class="icon-share-2"><i class="fa-solid fa-share-nodes"></i></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="social-links features-team-0">
                                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M8.30509 5.92804L13.4048 0H12.1964L7.76825 5.14724L4.23153 0H0.152344L5.50056 7.78354L0.152344 14H1.36089L6.03709 8.56434L9.77212 14H13.8513L8.30479 5.92804H8.30509ZM6.64982 7.85211L6.10793 7.07705L1.79635 0.909771H3.6526L7.1321 5.88696L7.67399 6.66202L12.1969 13.1316H10.3407L6.64982 7.85241V7.85211Z" fill="white"/>
+                                        </svg>
+                                    </a>
                                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"> <span class="icon-share-2 icon"><i class="fa-solid fa-share-nodes"></i></span></a>
+                                    <span><i class="fa-solid fa-share-nodes"></i></span>
                                 </div>
-                            </div>
-                            <div class="info-box">
-                                <span class="designation">Dental Surgeon</span>
-                                <h4 class="name"><a href="#">Dr.Abu Rayhan</a></h4>
                             </div>
                         </div>
                     </div>
-                    <div class="features-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="# "><img src="images/features/img-01.png" alt=""></a></figure>
-                                <span class="icon-share-2"><i class="fa-solid fa-share-nodes"></i></span>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="features-block">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <img src="images/features/img-01.png" alt="">
+                                </div>
+                                <div class="info-box">
+                                    <ul>
+                                        <li>
+                                            <span class="designation">Dental Surgeon</span>
+                                            <h4 class="name"><a href="#">Dr.Abu Rayhan</a></h4>
+                                        </li>
+                                        <li>
+                                            <span class="icon-share-2"><i class="fa-solid fa-share-nodes"></i></span>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <div class="social-links">
                                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M8.30509 5.92804L13.4048 0H12.1964L7.76825 5.14724L4.23153 0H0.152344L5.50056 7.78354L0.152344 14H1.36089L6.03709 8.56434L9.77212 14H13.8513L8.30479 5.92804H8.30509ZM6.64982 7.85211L6.10793 7.07705L1.79635 0.909771H3.6526L7.1321 5.88696L7.67399 6.66202L12.1969 13.1316H10.3407L6.64982 7.85241V7.85211Z" fill="white"/>
+                                        </svg>
+                                    </a>
                                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"> <span class="icon-share-2 icon"><i class="fa-solid fa-share-nodes"></i></span></a>
+                                    <span><i class="fa-solid fa-share-nodes"></i></span>
                                 </div>
-                            </div>
-                            <div class="info-box">
-                                <span class="designation">Dental Surgeon</span>
-                                <h4 class="name"><a href="#">Dr.Abu Rayhan</a></h4>
                             </div>
                         </div>
                     </div>
-                    <div class="features-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="# "><img src="images/features/img-2.png" alt=""></a></figure>
-                                <span class="icon-share-2"><i class="fa-solid fa-share-nodes"></i></span>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="features-block">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <img src="images/features/img-2.png" alt="">
+                                </div>
+                                <div class="info-box">
+                                    <ul>
+                                        <li>
+                                            <span class="designation">CEO</span>
+                                            <h4 class="name"><a href="#">Dr.David Hakin</a></h4>
+                                        </li>
+                                        <li>
+                                            <span class="icon-share-2"><i class="fa-solid fa-share-nodes"></i></span>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <div class="social-links">
                                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M8.30509 5.92804L13.4048 0H12.1964L7.76825 5.14724L4.23153 0H0.152344L5.50056 7.78354L0.152344 14H1.36089L6.03709 8.56434L9.77212 14H13.8513L8.30479 5.92804H8.30509ZM6.64982 7.85211L6.10793 7.07705L1.79635 0.909771H3.6526L7.1321 5.88696L7.67399 6.66202L12.1969 13.1316H10.3407L6.64982 7.85241V7.85211Z" fill="white"/>
+                                        </svg>
+                                    </a>
                                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"> <span class="icon-share-2 icon"><i class="fa-solid fa-share-nodes"></i></span></a>
+                                    <span><i class="fa-solid fa-share-nodes"></i></span>
                                 </div>
-                            </div>
-                            <div class="info-box">
-                                <span class="designation">Dental Surgeon</span>
-                                <h4 class="name"><a href="#">Dr.Abu Rayhan</a></h4>
                             </div>
                         </div>
                     </div>
-                    <div class="features-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="# "><img src="images/features/img-3.png" alt=""></a></figure>
-                                <span class="icon-share-2"><i class="fa-solid fa-share-nodes"></i></span>
-                                <div class="social-links">
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="features-block">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <img src="images/features/img-3.png" alt="">
+                                </div>
+                                <div class="info-box last-item">
+                                    <ul>
+                                        <li>
+                                            <span class="designation">Dental Care</span>
+                                            <h4 class="name"><a href="#">Dr.Dianne Russell</a></h4>
+                                        </li>
+                                        <li>
+                                            <span class="icon-share-2"><i class="fa-solid fa-share-nodes"></i></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="social-links features-team-0">
                                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M8.30509 5.92804L13.4048 0H12.1964L7.76825 5.14724L4.23153 0H0.152344L5.50056 7.78354L0.152344 14H1.36089L6.03709 8.56434L9.77212 14H13.8513L8.30479 5.92804H8.30509ZM6.64982 7.85211L6.10793 7.07705L1.79635 0.909771H3.6526L7.1321 5.88696L7.67399 6.66202L12.1969 13.1316H10.3407L6.64982 7.85241V7.85211Z" fill="white"/>
+                                        </svg>
+                                    </a>
                                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"> <span class="icon-share-2 icon"><i class="fa-solid fa-share-nodes"></i></span></a>
+                                    <span><i class="fa-solid fa-share-nodes"></i></span>
                                 </div>
-                            </div>
-                            <div class="info-box">
-                                <span class="designation">Dental Surgeon</span>
-                                <h4 class="name"><a href="#">Dr.Abu Rayhan</a></h4>
                             </div>
                         </div>
                     </div>
-                    <div class="features-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="# "><img src="images/features/img-01.png" alt=""></a></figure>
-                                <span class="icon-share-2"><i class="fa-solid fa-share-nodes"></i></span>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="features-block">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <img src="images/features/img-01.png" alt="">
+                                </div>
+                                <div class="info-box">
+                                    <ul>
+                                        <li>
+                                            <span class="designation">Dental Surgeon</span>
+                                            <h4 class="name"><a href="#">Dr.Abu Rayhan</a></h4>
+                                        </li>
+                                        <li>
+                                            <span class="icon-share-2"><i class="fa-solid fa-share-nodes"></i></span>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <div class="social-links">
                                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M8.30509 5.92804L13.4048 0H12.1964L7.76825 5.14724L4.23153 0H0.152344L5.50056 7.78354L0.152344 14H1.36089L6.03709 8.56434L9.77212 14H13.8513L8.30479 5.92804H8.30509ZM6.64982 7.85211L6.10793 7.07705L1.79635 0.909771H3.6526L7.1321 5.88696L7.67399 6.66202L12.1969 13.1316H10.3407L6.64982 7.85241V7.85211Z" fill="white"/>
+                                        </svg>
+                                    </a>
                                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"> <span class="icon-share-2 icon"><i class="fa-solid fa-share-nodes"></i></span></a>
+                                    <span><i class="fa-solid fa-share-nodes"></i></span>
                                 </div>
-                            </div>
-                            <div class="info-box">
-                                <span class="designation">Dental Surgeon</span>
-                                <h4 class="name"><a href="#">Dr.Abu Rayhan</a></h4>
                             </div>
                         </div>
                     </div>
-                    <div class="features-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="# "><img src="images/features/img-2.png" alt=""></a></figure>
-                                <span class="icon-share-2"><i class="fa-solid fa-share-nodes"></i></span>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="features-block">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <img src="images/features/img-2.png" alt="">
+                                </div>
+                                <div class="info-box">
+                                    <ul>
+                                        <li>
+                                            <span class="designation">CEO</span>
+                                            <h4 class="name"><a href="#">Dr.David Hakin</a></h4>
+                                        </li>
+                                        <li>
+                                            <span class="icon-share-2"><i class="fa-solid fa-share-nodes"></i></span>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <div class="social-links">
                                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M8.30509 5.92804L13.4048 0H12.1964L7.76825 5.14724L4.23153 0H0.152344L5.50056 7.78354L0.152344 14H1.36089L6.03709 8.56434L9.77212 14H13.8513L8.30479 5.92804H8.30509ZM6.64982 7.85211L6.10793 7.07705L1.79635 0.909771H3.6526L7.1321 5.88696L7.67399 6.66202L12.1969 13.1316H10.3407L6.64982 7.85241V7.85211Z" fill="white"/>
+                                        </svg>
+                                    </a>
                                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"> <span class="icon-share-2 icon"><i class="fa-solid fa-share-nodes"></i></span></a>
+                                    <span><i class="fa-solid fa-share-nodes"></i></span>
                                 </div>
-                            </div>
-                            <div class="info-box">
-                                <span class="designation">Dental Surgeon</span>
-                                <h4 class="name"><a href="#">Dr.Abu Rayhan</a></h4>
                             </div>
                         </div>
                     </div>
-                    <div class="features-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="# "><img src="images/features/img-3.png" alt=""></a></figure>
-                                <span class="icon-share-2"><i class="fa-solid fa-share-nodes"></i></span>
-                                <div class="social-links">
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="features-block">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <img src="images/features/img-3.png" alt="">
+                                </div>
+                                <div class="info-box last-item">
+                                    <ul>
+                                        <li>
+                                            <span class="designation">Dental Care</span>
+                                            <h4 class="name"><a href="#">Dr.Dianne Russell</a></h4>
+                                        </li>
+                                        <li>
+                                            <span class="icon-share-2"><i class="fa-solid fa-share-nodes"></i></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="social-links features-team-0">
                                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M8.30509 5.92804L13.4048 0H12.1964L7.76825 5.14724L4.23153 0H0.152344L5.50056 7.78354L0.152344 14H1.36089L6.03709 8.56434L9.77212 14H13.8513L8.30479 5.92804H8.30509ZM6.64982 7.85211L6.10793 7.07705L1.79635 0.909771H3.6526L7.1321 5.88696L7.67399 6.66202L12.1969 13.1316H10.3407L6.64982 7.85241V7.85211Z" fill="white"/>
+                                        </svg>
+                                    </a>
                                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"> <span class="icon-share-2 icon"><i class="fa-solid fa-share-nodes"></i></span></a>
+                                    <span><i class="fa-solid fa-share-nodes"></i></span>
                                 </div>
-                            </div>
-                            <div class="info-box">
-                                <span class="designation">Dental Surgeon</span>
-                                <h4 class="name"><a href="#">Dr.Abu Rayhan</a></h4>
                             </div>
                         </div>
                     </div>
@@ -727,12 +827,12 @@
     <!--Features END -->
 
     <!-- Latest Features Start -->
-    <section class="feature-two">
+    <section class="latest-feature">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
-                    <div class="feature-two__left">
-                        <ul class="feature-two__points list-unstyled">
+                    <div class="latest-feature__left">
+                        <ul class="latest-feature__points list-unstyled">
                             <li class="feature-icon-box">
                                 <div class="feature-icon">
                                     <img src="images/features/icon-01.png" alt="">
@@ -773,7 +873,7 @@
                     </div>
                 </div>
                 <div class="col-xl-6">
-                    <div class="feature-two__right">
+                    <div class="latest-feature__right">
                         <div class="section-title-three__tagline-box">
                             <img src="images/resources/Section logo.png" alt="">
                             <p class="section-title-three__tagline">Latest Features</p>
@@ -782,19 +882,19 @@
                             <h2 class="section-title-three__title">Your Journey Health <br> Begins Her</h2>
                             <p>The field of medicine encompasses various healthcare practices aimed at promoting, maintaining,restoring health The field of medicine encompasses various The field of medicine encompasses various healthcare practices</p>
                         </div>
-                        <div class="feature-two__img wow slideInRight" data-wow-delay="100ms"
+                        <div class="latest-feature__img wow slideInRight" data-wow-delay="100ms"
                             data-wow-duration="2500ms">
                             <img src="images/features/img-4.png" alt="">
-                            <div class="feature-two__shape-1 float-bob-y">
-                                <div class="feature-two__shape-1-image">
+                            <div class="latest-feature__shape-1 float-bob-y">
+                                <div class="latest-feature__shape-1-image">
                                     <img src="images/features/icon-05.png" alt="">
                                 </div>
-                                <div class="feature-two count-box">
-                                    <div class="feature-two-counter d-flex flex-wrap">
+                                <div class="latest-feature count-box">
+                                    <div class="latest-feature-counter d-flex flex-wrap">
                                         <h3 class="count-text" data-stop="2" data-speed="4000">00</h3>
                                         <span>K+</span>
                                     </div>
-                                    <p class="feature-two_experience-text">Project Completed</p>
+                                    <p class="latest-feature_experience-text">Project Completed</p>
                                 </div>
                             </div>
                         </div>
@@ -1081,8 +1181,6 @@
                         <!-- End Owl Carousel -->
                     </div>
                 </div>
-                <!-- Custom Dots Container for Testimonial Section -->
-                <div class="testimonial-dots-container"></div>
             </div>
         </div>
     </section>
@@ -1289,8 +1387,8 @@
     </section>
     <!--Trust Us End-->
 
-      <!--Site Footer Three Start-->
-      <footer class="site-footer-three">
+    <!--Site Footer Three Start-->
+    <footer class="site-footer-three">
         <div class="container">
             <div class="site-footer-three__middle">
                 <div class="row">
@@ -1359,7 +1457,7 @@
                                     <div class="icon">
                                         <i class="fa-solid fa-location-dot"></i>
                                     </div>
-                                    <div class="text">
+                                    <div class="text location-one">
                                         <p><a href="#">6391 Elgin St. Celina, 10299</a></p>
                                     </div>
                                 </li>

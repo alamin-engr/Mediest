@@ -877,7 +877,7 @@
   -webkit-animation-name: float-bob-y;
   animation-name: float-bob-y;
   -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
