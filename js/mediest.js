@@ -778,9 +778,80 @@ jQuery(document).ready(function($) {
       }
     }
 
+// # Select
+$(document).ready(function(){
+  $('.selectpicker').selectpicker();
+});
 
-  
-  
+
+
+// Popular Causes Progress Bar
+document.addEventListener("DOMContentLoaded", function () {
+    function animateProgressBars() {
+        document.querySelectorAll(".count-bar").forEach((bar) => {
+            // Get the data-percent value
+            let percent = bar.getAttribute("data-percent");
+            // Apply the width dynamically
+            bar.style.width = percent;
+            // Add the counted class to trigger the animation for text
+            bar.classList.add("counted");
+        });
+    }
+
+    function handleScroll() {
+        let progressBars = document.querySelectorAll(".team-details__progress-list");
+        if (!progressBars.length) return;
+
+        progressBars.forEach((progressSection) => {
+            let sectionPosition = progressSection.getBoundingClientRect().top;
+            let screenHeight = window.innerHeight;
+
+            if (sectionPosition < screenHeight - 100) {
+                animateProgressBars();
+                window.removeEventListener("scroll", handleScroll); // Runs only once for better performance
+            }
+        });
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Run on page load in case the section is already visible
+});
+
+// Blog Pagination
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll(".page-link");
+  const urlParams = new URLSearchParams(window.location.search);
+  let currentPage = urlParams.get("page") || "1"; // Default to page 1 if no page parameter
+
+  // Ensure currentPage is always a string for comparison
+  currentPage = currentPage.toString();
+
+  // Active Page Highlight
+  links.forEach(link => {
+    if (link.dataset.page === currentPage) {
+      link.classList.add("active"); // Add active class to the correct page link
+    } else {
+      link.classList.remove("active"); // Remove active class from other pages
+    }
+  });
+
+  // Next Button Functionality
+  const nextButton = document.querySelector(".next-page");
+  if (nextButton) {
+    nextButton.addEventListener("click", function (event) {
+      event.preventDefault(); // Prevent Default Anchor Behavior
+
+      // Cycle through pages: after page 3, go back to page 1
+      let nextPage = parseInt(currentPage) + 1;
+      if (nextPage > 3) {
+        nextPage = 1; // If currentPage is 3, loop back to page 1
+      }
+
+      window.location.href = `blog.html?page=${nextPage}`; // Redirect to next page
+    });
+  }
+});
+
 
 
 

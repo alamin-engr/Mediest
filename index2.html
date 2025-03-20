@@ -64,7 +64,7 @@
                                 </div>
                                 <div class="main-menu-two__main-menu-box">
                                     <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
-                                    <ul class="main-menu__list-two">
+                                    <ul class="main-menu__list main-menu__list-two">
                                         <li class="dropdown2 current">
                                             <a href="#">Home</a>
                                             <ul class="sub-menu">
@@ -92,19 +92,19 @@
                                         <li class="dropdown2">
                                             <a href="#">Page</a>
                                             <ul class="sub-menu">
-                                                <li><a href="team">Team</a></li>
-                                                <li><a href="#">Team Details</a></li>
+                                                <li><a href="team.html">Team</a></li>
+                                                <li><a href="team-details.html">Team Details</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown2">
                                             <a href="#">Blog</a>
                                             <ul class="sub-menu">
-                                                <li><a href="#">Blog</a></li>
-                                                <li><a href="#">Blog Details</a></li>
+                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown2">
-                                            <a href="#">Contact</a>
+                                            <a href="contact.html">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -280,7 +280,7 @@
                         </div>
                         <p class="feature-two__text">The field of medicine encompasses various healthcare practices aimed</p>
                         <div class="about-two__btn-box">
-                            <a href="#" class="about-one__btn thm-btn">Read More</a>
+                            <a href="service.html" class="about-one__btn thm-btn blog-two-btn">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -298,7 +298,7 @@
                         </div>
                         <p class="feature-two__text">The field of medicine encompasses various healthcare practices aimed</p>
                         <div class="about-two__btn-box">
-                            <a href="#" class="about-one__btn thm-btn">Read More</a>
+                            <a href="service.html" class="about-one__btn thm-btn">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -316,7 +316,7 @@
                         </div>
                         <p class="feature-two__text"></p>The field of medicine encompasses various healthcare practices aimed</p>
                         <div class="about-two__btn-box">
-                            <a href="#" class="about-one__btn thm-btn">Read More</a>
+                            <a href="service.html" class="about-one__btn thm-btn">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -450,11 +450,14 @@
                                 </div>
                                 <div class="col-md-6">
                                     <label for="propertyType" class="form-label">Property Type</label>
-                                    <select id="propertyType" name="propertyType" class="form-select" required>
-                                    <option value="" disabled selected>Choose type</option>
-                                    <option value="Residential">Residential</option>
-                                    <option value="Commercial">Commercial</option>
-                                    </select>
+                                    <div class="appointment-one__showing-sort home-two-select">
+                                        <select class="selectpicker" data-live-search="true">
+                                            <option value="" selected>Choose a Option</option>
+                                            <option value="1">Sort by Love</option>
+                                            <option value="2">Sort by Fire</option>
+                                            <option value="3">Sort by Search</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-textarea">

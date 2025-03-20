@@ -87,14 +87,18 @@
                             </ul>
                         </div>
                         <div class="main-header-three__top-text-and-social">
-                            <div class="main-header-three__top-social">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                    <path d="M8.30509 5.92804L13.4048 0H12.1964L7.76825 5.14724L4.23153 0H0.152344L5.50056 7.78354L0.152344 14H1.36089L6.03709 8.56434L9.77212 14H13.8513L8.30479 5.92804H8.30509ZM6.64982 7.85211L6.10793 7.07705L1.79635 0.909771H3.6526L7.1321 5.88696L7.67399 6.66202L12.1969 13.1316H10.3407L6.64982 7.85241V7.85211Z" fill="white"/>
-                                  </svg>
-                                </a>
-                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <div class="main-header-three__right-social">
+                                <ul class="main-header-three__top-social">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li> 
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                             <path d="M8.30509 5.92804L13.4048 0H12.1964L7.76825 5.14724L4.23153 0H0.152344L5.50056 7.78354L0.152344 14H1.36089L6.03709 8.56434L9.77212 14H13.8513L8.30479 5.92804H8.30509ZM6.64982 7.85211L6.10793 7.07705L1.79635 0.909771H3.6526L7.1321 5.88696L7.67399 6.66202L12.1969 13.1316H10.3407L6.64982 7.85241V7.85211Z" fill="white"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li> <a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -138,18 +142,18 @@
                                         <a href="#">Page</a>
                                         <ul class="sub-menu">
                                             <li><a href="team.html">Team</a></li>
-                                            <li><a href="#">Team Details</a></li>
+                                            <li><a href="team-details.html">Team Details</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#">Blog</a>
                                         <ul class="sub-menu">
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Blog Details</a></li>
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#">Contact</a>
+                                        <a href="contact.html">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -966,11 +970,14 @@
                         </div>
                         <div class="form-row">
                             <input type="tel" placeholder="Your Number" required>
-                            <select required>
-                            <option value="Option 1">Choose a Option</option>
-                            <option value="Option 2">Option 2</option>
-                            <option value="Option 3">Option 3</option>
-                            </select>
+                            <div class="appointment-one__showing-sort home-one-select">
+                                <select class="selectpicker" data-live-search="true">
+                                    <option value="" selected>Choose a Option</option>
+                                    <option value="1">Sort by Love</option>
+                                    <option value="2">Sort by Fire</option>
+                                    <option value="3">Sort by Search</option>
+                                </select>
+                            </div>
                         </div>
                         <textarea placeholder="Message here.." rows="4"></textarea>
                         <button class="thm-btn2 " type="submit">APPOINTMENT NOW</button>
