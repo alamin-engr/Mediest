@@ -4827,8 +4827,6 @@ h2.section-title-three__title.question {
 }
 
 
-
-
 .testimonial .slick-dots {
   display: flex;
   position: absolute;
@@ -4845,7 +4843,6 @@ h2.section-title-three__title.question {
   margin-top: 35px;
 }
 
-
 .testimonial .slick-dots li button {
   position: relative;
   border-radius: 50%;
@@ -4857,7 +4854,6 @@ h2.section-title-three__title.question {
   display: inline-block;
   transition: all 0.3s ease;
 }
-
 
 .testimonial .slick-dots li.slick-active button {
   background: var(--Mediest-gray-primary); 
