@@ -666,8 +666,8 @@ jQuery(document).ready(function($) {
               0: { items: 1, nav: true },
               480: { items: 1, nav: true },
               768: { items: 2 },
-              1024: { items: 2 },
-              1199: { items: 3.48 }
+              1024: { items: 3 },
+              1199: { items: 3.48}
           }
       });
   });

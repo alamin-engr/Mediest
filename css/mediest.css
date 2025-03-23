@@ -34,6 +34,7 @@
 
 .row {
   --bs-gutter-x: 30px;
+
 }
 
 .gutter-y-30 {
@@ -233,7 +234,7 @@ ul#pills-tab {
 }
 
 .custom-cursor__hover {
-  background-color: var(--bizro-base);
+  background-color: var(--Mediest-gray-primary);
   opacity: 0.4;
 }
 
@@ -432,7 +433,7 @@ ul#pills-tab {
 
 .preloader {
   position: fixed;
-  background-color: #fff;
+  background-color: var(--Mediest-gray-primary);
   background-position: center center;
   background-repeat: no-repeat;
   top: 0;
@@ -464,11 +465,10 @@ ul#pills-tab {
   background-image: url(../images/Logo.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 60px auto;
+
   width: 100%;
   height: 100%;
 }
-
 /* scroll to top */
 .scroll-to-top {
   display: inline-block;
@@ -489,7 +489,7 @@ ul#pills-tab {
 
 .scroll-to-top i {
   color: var(--Mediest-white);
-  font-size: 18px;
+  font-size: 22px;
   line-height: 50px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -499,11 +499,12 @@ ul#pills-tab {
 }
 
 .scroll-to-top:hover {
-  background-color: blueviolet;
+  border: 1px solid var(--Mediest-gray-primary);
+  background-color: var(--Mediest-primary);
 }
 
 .scroll-to-top:hover i {
-  color: var(--Mediest-white);
+  color: var(--Mediest-gray-primary);
 }
 
 /*--------------------------------------------------------------
@@ -2231,6 +2232,9 @@ li.nav-item {
   visibility: hidden;
   transition: all 400ms ease;
 }
+.social-links.features-team-three {
+  bottom: -5px;
+}
 
 .features-block .inner-box:hover .social-links {
   -webkit-transform: scaleY(1);
@@ -2799,7 +2803,6 @@ button:hover {
   border-radius: 20px;
   padding: 10px 20px;
   background: var(--Mediest-white);
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.08);
   transition: all 0.4s ease;
   z-index: 1;
   text-transform: uppercase;
@@ -3298,8 +3301,44 @@ h2.section-title-three__title.question {
   padding: 120px 0 120px 0;
   z-index: 1;
 }
+.news-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.blog__btn-box {
+  align-content: center;
+  margin-top: 12px;
+}
 
-h2.section-title-three__title.news {
+.news__blog-btn::after {
+  color: var(--Mediest-white);
+}
+.news__blog-btn::before {
+  background: var(--Mediest-primary);
+}
+
+.news__blog-btn {
+  background: var(--Mediest-gray-primary);
+  border: none;
+  color: var(--Mediest-white);
+}
+
+.news__blog-btn.thm-btn:hover::after {
+  color: var(--Mediest-black);
+}
+
+.news__blog-btn.thm-btn:hover:before {
+  top: -40%;
+}
+
+.news__blog-btn.thm-btn:hover {
+  color: var(--Mediest-black);
+  background: var(--Mediest-primary);
+}
+
+
+
+.section-title-three__title.news {
   margin-bottom: 51px;
 }
 
@@ -4010,7 +4049,9 @@ h2.section-title-three__title.news {
   margin-top: 30px;
   margin-bottom: 40px;
 }
-
+.service__btn {
+  border: 2px solid #E7E7EB;
+}
 .feature-two__single:hover .thm-btn {
   color: var(--Mediest-white); 
 }
@@ -4193,6 +4234,7 @@ h2.section-title-three__title.news {
     width: 510px;
     justify-content: center;
     align-items: center;
+    border: none;
 }
 .appointment-two-btn::after {
   color: var(--Mediest-white);
@@ -4451,6 +4493,10 @@ h2.section-title-three__title.news {
 
 .custom-nav-button.right {
   right: 307px;
+  background: var(--Mediest-gray-primary);
+}
+.custom-nav-button.right i {
+    color: var(--Mediest-white);
 }
 .pq-bg-primary .owl-carousel {
   margin-bottom: 0 !important; /* Removes any bottom margin */
@@ -4503,6 +4549,10 @@ h2.section-title-three__title.news {
 }
 .our-service-two__btn-box {
   margin-top: 65px;
+}
+.our-service__btn {
+  border-radius: 999px;
+  border: 2px solid #E7E7EB;
 }
 
 .our-service-two-heading__right {
@@ -4664,7 +4714,34 @@ h2.section-title-three__title.news {
 
 
 
+.cta-two__btn {
+  border: none;
+  color: var(--Mediest-white);
+  background: var(--Mediest-gray-primary);
 
+}
+
+.cta-two__btn:after {
+  color: var(--Mediest-white);
+}
+
+.cta-two__btn::before {
+  background-color: var(--Mediest-white);
+}
+
+.cta-two__btn:hover::after {
+  color: var(--Mediest-black);
+}
+
+.cta-two__btn:hover:before {
+  top: -40%;
+}
+
+.cta-two__btn:hover {
+  color: var(--Mediest-black);
+  background: var(--Mediest-primary);
+  border: 2px solid #E7E7EB;;
+}
 
 
 /*--------------------------------------------------------------
@@ -5065,7 +5142,7 @@ h2.section-title-three__title.news {
 }
 
 .pricing-two__single:hover {
-  border-color: #328aee;
+  border-color:var(--Mediest-gray-primary);
   background: var(--Mediest-base);
 }
 
@@ -5176,6 +5253,9 @@ h2.section-title-three__title.news {
 
 .tabs-content .pricing-two__single:hover .thm-btn:after {
   color: var(--Mediest-white);
+}
+.price-two__btn {
+  border: 2px solid  #E7E7EB;
 }
 
 
