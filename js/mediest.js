@@ -893,8 +893,21 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// const nextButton = document.querySelector(".next-page");
+// if (nextButton) {
+//   nextButton.addEventListener("click", function (event) {
+//     event.preventDefault(); // Prevent Default Anchor Behavior
 
+//     // Cycle through pages: after page 3, go back to page 1
+//     let nextPage = parseInt(currentPage) + 1;
+//     if (nextPage > 3) {
+//       nextPage = 1; // If currentPage is 3, loop back to page 1
+//     }
 
+//     window.location.href = `blog.html?page=${nextPage}`; // Redirect to next page
+//   });
+// }
+// });
 
 })(jQuery);
 
