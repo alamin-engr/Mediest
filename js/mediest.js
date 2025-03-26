@@ -34,26 +34,6 @@
 }
 
 
-// Menu  Sticky Header
-window.addEventListener('scroll', function () {
-  const header = document.querySelector('.main-header-two');
-  if (window.scrollY > 50) { // Adjust threshold as needed
-    header.classList.add('sticky');
-  } else {
-    header.classList.remove('sticky');
-  }
-});
-
-window.addEventListener('scroll', function () {
-  const header = document.querySelector('.main-header-three');
-  if (window.scrollY > 50) { // Adjust threshold as needed
-    header.classList.add('sticky');
-  } else {
-    header.classList.remove('sticky');
-  }
-});
-
-
 
   // Price Filter
 
@@ -334,6 +314,66 @@ $('.features-team_slider').slick({
     }
   }
 
+  if ($(".main-menu__list").length) {
+    // dynamic current class
+    let mainNavUL = $(".main-menu__list");
+    dynamicCurrentMenuClass(mainNavUL);
+  }
+  if ($(".service-details__sidebar-service-list").length) {
+    // dynamic current class
+    let mainNavUL = $(".service-details__sidebar-service-list");
+    dynamicCurrentMenuClass(mainNavUL);
+  }
+
+  if ($(".main-menu__list").length && $(".mobile-nav__container").length) {
+    let navContent = document.querySelector(".main-menu__list").outerHTML;
+    let mobileNavContainer = document.querySelector(".mobile-nav__container");
+    mobileNavContainer.innerHTML = navContent;
+  }
+  if ($(".sticky-header__content").length) {
+    let navContent = document.querySelector(".main-menu").innerHTML;
+    let mobileNavContainer = document.querySelector(".sticky-header__content");
+    mobileNavContainer.innerHTML = navContent;
+  }
+
+  if ($(".mobile-nav__container .main-menu__list").length) {
+    let dropdownAnchor = $(
+      ".mobile-nav__container .main-menu__list .dropdown > a"
+    );
+    dropdownAnchor.each(function () {
+      let self = $(this);
+      let toggleBtn = document.createElement("BUTTON");
+      toggleBtn.setAttribute("aria-label", "dropdown toggler");
+      toggleBtn.innerHTML = "<i class='fa fa-angle-down'></i>";
+      self.append(function () {
+        return toggleBtn;
+      });
+      self.find("button").on("click", function (e) {
+        e.preventDefault();
+        let self = $(this);
+        self.toggleClass("expanded");
+        self.parent().toggleClass("expanded");
+        self.parent().parent().children("ul").slideToggle();
+      });
+    });
+  }
+
+  if ($(".mobile-nav__toggler").length) {
+    $(".mobile-nav__toggler").on("click", function (e) {
+      e.preventDefault();
+      $(".mobile-nav__wrapper").toggleClass("expanded");
+      $("body").toggleClass("locked");
+    });
+  }
+
+  if ($(".search-toggler").length) {
+    $(".search-toggler").on("click", function (e) {
+      e.preventDefault();
+      $(".search-popup").toggleClass("active");
+      $(".mobile-nav__wrapper").removeClass("expanded");
+      $("body").toggleClass("locked");
+    });
+  }
   if ($(".wow").length) {
     var wow = new WOW({
       boxClass: "wow", // animated element css class (default is wow)
@@ -857,4 +897,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 })(jQuery);
+
+
+
+
+
+
+
+
+
 
