@@ -39,7 +39,7 @@
 
     <!-- template styles -->
     <link rel="stylesheet" href="css/mediest.css" />
-    <!-- <link rel="stylesheet" href="assets/css/bizro-responsive.css" /> -->
+    <link rel="stylesheet" href="css/mediest-responsive.css" /> 
 </head>
 
 <body class="custom-cursor">
@@ -53,68 +53,153 @@
     <!-- /.preloader -->
 
     <div class="page-wrapper">       
-        <header class="main-header">
-            <nav class="main-menu">
-                <div class="main-menu__wrapper">
-                    <div class="container">
-                        <div class="main-menu__wrapper-inner">
-                            <div class="main-menu__logo">
-                                <a href="index.html"><img src="images/Logo.png" alt=""></a>
-                            </div>
-                            <div class="main-menu__main-menu-box">
-                                <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
-                                <ul class="main-menu__list main-menu__list-two">
-                                    <li>
-                                        <a href="#">Home</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="index.html">Home One</a></li>
-                                            <li><a href="index2.html">Home Two</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="about.html">About Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Services</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="service-details.html">Services Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Projects</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="project.html">Projects</a></li>
-                                            <li><a href="project-details.html">Projects Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Blog</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Page</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="team.html">Team</a></li>
-                                            <li><a href="team-details.html">Team-Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Conatct</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="menu-two-toggle">
-                                <a href="#"><img src="images/icon/Group 1000008575.png" alt=""></a>
+        <header class="main-header-two">
+        <nav class="main-menu main-menu-two">
+            <div class="main-menu-two__wrapper">
+                <div class="container">
+                    <div class="main-menu-two__wrapper-inner">
+                        <div class="main-menu-two__logo">
+                            <a href="index.html"><img src="images/Logo.png" alt=""></a>
+                        </div>
+                        <div class="main-menu-two__main-menu-box">
+                            <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                            <ul class="main-menu__list">
+                                <li class="dropdown current ">
+                                    <a href="#">Home</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="index.html">Home One</a></li>
+                                        <li><a href="index2.html">Home Two</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">Services</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="service-details.html">Services Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">Projects</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="project.html">Projects</a></li>
+                                        <li><a href="project-details.html">Projects Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">Blog</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">Page</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="team.html">Team</a></li>
+                                        <li><a href="team-details.html">Team Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="contact.html">Conatct</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main-menu__right">
+                            <div class="toggol_bar" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight">
+                               <span><svg xmlns="http://www.w3.org/2000/svg" width="63" height="64" viewBox="0 0 63 64" fill="none">
+                                <rect y="0.769531" width="62.5659" height="62.5659" rx="31.2829" fill="white"/>
+                                <line x1="14.3594" y1="32.5435" x2="45.1271" y2="32.5435" stroke="#052420" stroke-width="3.07701"/>
+                                <path d="M19.4844 42.6953H45.1241" stroke="#052420" stroke-width="3.07701"/>
+                                <path d="M24.6113 22.4375H45.1231" stroke="#052420" stroke-width="3.07701"/>
+                              </svg></span> 
                             </div>
                         </div>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
         </header>
+        <div class="menu_offcanvas offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa fa-times"></i></button>
+            <div class="offcanvas-body">
+                <a class="offcanvas_logo" href="index.html">
+                    <img src="images/Logo.png" alt="Mediest" class="img-fluid w-100">
+                </a>
+                
+                <div class="sidebar__single sidebar__post offcanvas_blog">
+                    <div class="sidebar__title-box">
+                        <h3 class="sidebar__title">Recent Post</h3>
+                    </div>
+                    <ul class="sidebar__post-list list-unstyled">
+                        <li>
+                            <div class="sidebar__post-box">
+                                <div class="sidebar__post-image">
+                                    <img src="images/blog/blog-category-01.png" alt="">
+                                </div>
+                                <div class="sidebar__post-content">
+                                    <p class="blog-category-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                            <path d="M384 480l48 0c11.4 0 21.9-6 27.6-15.9l112-192c5.8-9.9 5.8-22.1 .1-32.1S555.5 224 544 224l-400 0c-11.4 0-21.9 6-27.6 15.9L48 357.1 48 96c0-8.8 7.2-16 16-16l117.5 0c4.2 0 8.3 1.7 11.3 4.7l26.5 26.5c21 21 49.5 32.8 79.2 32.8L416 144c8.8 0 16 7.2 16 16l0 32 48 0 0-32c0-35.3-28.7-64-64-64L298.5 96c-17 0-33.3-6.7-45.3-18.7L226.7 50.7c-12-12-28.3-18.7-45.3-18.7L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l23.7 0L384 480z"/>
+                                        </svg>
+                                        Category
+                                    </p>
+                                    <h3 class="sidebar__post-title offcanvas-post-title"><a href="blog.html">Caring for Inspiring Hope Wellness </a></h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sidebar__post-box">
+                                <div class="sidebar__post-image">
+                                    <img src="images/blog/blog-category-02.png" alt="">
+                                </div>
+                                <div class="sidebar__post-content">
+                                    <p class="blog-category-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                            <path d="M384 480l48 0c11.4 0 21.9-6 27.6-15.9l112-192c5.8-9.9 5.8-22.1 .1-32.1S555.5 224 544 224l-400 0c-11.4 0-21.9 6-27.6 15.9L48 357.1 48 96c0-8.8 7.2-16 16-16l117.5 0c4.2 0 8.3 1.7 11.3 4.7l26.5 26.5c21 21 49.5 32.8 79.2 32.8L416 144c8.8 0 16 7.2 16 16l0 32 48 0 0-32c0-35.3-28.7-64-64-64L298.5 96c-17 0-33.3-6.7-45.3-18.7L226.7 50.7c-12-12-28.3-18.7-45.3-18.7L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l23.7 0L384 480z"/>
+                                        </svg>
+                                        Category
+                                    </p>
+                                    <h3 class="sidebar__post-title offcanvas-post-title"><a href="blog.html">Your Journey Wellness Starts Here </a></h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sidebar__post-box">
+                                <div class="sidebar__post-image">
+                                    <img src="images/blog/blog-category-03.png" alt="">
+                                </div>
+                                <div class="sidebar__post-content">
+                                    <p class="blog-category-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                            <path d="M384 480l48 0c11.4 0 21.9-6 27.6-15.9l112-192c5.8-9.9 5.8-22.1 .1-32.1S555.5 224 544 224l-400 0c-11.4 0-21.9 6-27.6 15.9L48 357.1 48 96c0-8.8 7.2-16 16-16l117.5 0c4.2 0 8.3 1.7 11.3 4.7l26.5 26.5c21 21 49.5 32.8 79.2 32.8L416 144c8.8 0 16 7.2 16 16l0 32 48 0 0-32c0-35.3-28.7-64-64-64L298.5 96c-17 0-33.3-6.7-45.3-18.7L226.7 50.7c-12-12-28.3-18.7-45.3-18.7L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l23.7 0L384 480z"/>
+                                        </svg>
+                                        Category
+                                    </p>
+                                    <h3 class="sidebar__post-title offcanvas-post-title"><a href="blog.html">Compassionate Care Expertise You </a></h3>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="offcanvas_contact">
+                    <div class="services-details__contact project-details-contact">
+                        <h3 class="project-details-contact-title">GET TOUCH</h3>
+                        <div class="cta-two-contact services-details-content">
+                            <div class="icon" aria-label="Contact us">
+                                <i class="fa-solid fa-phone-flip"></i>
+                            </div>                
+                            <p>For fast service</p>
+                            <h2 class="services-details__contact-number project-number">01745892474</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="stricky-header stricked-menu main-menu main-menu-two">
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
@@ -310,7 +395,7 @@
                                 <img src="images/features/service-two-icon-03.png" alt="">
                             </div>
                         </div>
-                        <p class="feature-two__text"></p>The field of medicine encompasses various healthcare practices aimed</p>
+                        <p class="feature-two__text">The field of medicine encompasses various healthcare practices aimed</p>
                         <div class="about-two__btn-box">
                            <a href="service.html" class="service__btn thm-btn ">Read More</a>
                         </div>
@@ -426,7 +511,7 @@
                             <p class="section-title-three__tagline appointment-two-title">Get in touch</p>
                         </div>
                         <div class="appointment-two-text">
-                            <h2 class="appointment-two-heading">Partnering for with Heart <br> Better Health</h2>
+                            <h2 class="appointment-two-heading">Partnering for with Heart Better Health</h2>
                         </div>
                         <form class="contact-form">
                             <div class="row">
@@ -1426,7 +1511,6 @@
    
 
     </div>
-
     <div class="mobile-nav__wrapper">
         <div class="mobile-nav__overlay mobile-nav__toggler"></div>
         <!-- /.mobile-nav__overlay -->
@@ -1470,37 +1554,22 @@
             <!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
                 <div class="mobile-nav__social">
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-facebook-square"></a>
-                    <a href="#" class="fab fa-pinterest-p"></a>
-                    <a href="#" class="fab fa-instagram"></a>
-                </div><!-- /.mobile-nav__social -->
-            </div><!-- /.mobile-nav__top -->
-
-
-
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M8.30509 5.92804L13.4048 0H12.1964L7.76825 5.14724L4.23153 0H0.152344L5.50056 7.78354L0.152344 14H1.36089L6.03709 8.56434L9.77212 14H13.8513L8.30479 5.92804H8.30509ZM6.64982 7.85211L6.10793 7.07705L1.79635 0.909771H3.6526L7.1321 5.88696L7.67399 6.66202L12.1969 13.1316H10.3407L6.64982 7.85241V7.85211Z" fill="white"/>
+                       </svg>
+                   </a>
+                   <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <!-- /.mobile-nav__top -->
         </div>
         <!-- /.mobile-nav__content -->
     </div>
     <!-- /.mobile-nav__wrapper -->
 
-    <div class="search-popup">
-        <div class="search-popup__overlay search-toggler"></div>
-        <!-- /.search-popup__overlay -->
-        <div class="search-popup__content">
-            <form action="#">
-                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
-                <input type="text" id="search" placeholder="Search Here..." />
-                <button type="submit" aria-label="search submit" class="thm-btn">
-                    <i class="icon-magnifying-glass"></i>
-                </button>
-            </form>
-        </div>
-        <!-- /.search-popup__content -->
-    </div>
-    <!-- /.search-popup -->
-
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa-solid fa-plus"></i></a>
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa-solid fa-angle-left"></i></a>
 
     <script src="Alamin/jquery/jquery-3.6.0.min.js"></script>
     <script src="Alamin/bootstrap/js/bootstrap.bundle.min.js"></script>

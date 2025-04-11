@@ -33,6 +33,16 @@
    
 }
 
+if ($(".video-popup").length) {
+  $(".video-popup").magnificPopup({
+    type: "iframe",
+    mainClass: "mfp-fade",
+    removalDelay: 160,
+    preloader: true,
+
+    fixedContentPos: false
+  });
+}
 
 
   // Price Filter
@@ -908,6 +918,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //   });
 // }
 // });
+
 
 })(jQuery);
 
