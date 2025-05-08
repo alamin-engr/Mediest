@@ -4132,6 +4132,7 @@ textarea.form-control-lg {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 500;
+    line-height: 24px;
     font-family: var(--Mediest-font-two);
     padding: 20px 40px;
 }

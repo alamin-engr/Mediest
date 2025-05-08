@@ -129,29 +129,28 @@ if ($(".video-popup").length) {
   // Accrodion start FAQ
   $(document).ready(function() {
     if ($(".accrodion-grp").length) {
-      var accordionGrp = $(".accrodion-grp"); // Select all accordion groups
+      var accordionGrp = $(".accrodion-grp");
   
       accordionGrp.each(function() {
-        var self = $(this); // Reference to the current accordion group
-        var accordion = self.find(".accrodion"); // Find all accordion items in this group
+        var self = $(this);
+        var accordion = self.find(".accrodion");
   
-        // Initially hide all accordion contents
+        // Initially hide all contents
         self.find(".accrodion .accrodion-content").hide();
   
-        // Add single click handler to toggle the accordion
         accordion.each(function() {
-          var accordionItem = $(this); // Cache the current accordion item
-          var accordionTitle = accordionItem.find(".accrodion-title");
+          var accordionItem = $(this);
+          
+          // Clickable area: either .accrodion-title or .accrodion-title-stroke
+          var clickable = accordionItem.find(".accrodion-title, .accrodion-title-stroke");
   
-          // On single-click, toggle the content visibility
-          accordionTitle.on("click", function() {
-            // If the clicked item is already active, close it
+          clickable.on("click", function() {
             if (accordionItem.hasClass("active")) {
               accordionItem.removeClass("active").find(".accrodion-content").slideUp();
             } else {
-              // Otherwise, open the clicked item and close others
+              // Open current
               accordionItem.addClass("active").find(".accrodion-content").slideDown();
-              // Close other accordion items
+              // Close others
               self.find(".accrodion").not(accordionItem).removeClass("active").find(".accrodion-content").slideUp();
             }
           });
@@ -159,6 +158,7 @@ if ($(".video-popup").length) {
       });
     }
   });
+  
   if ($(".accrodion-grp-question").length) {
     var accrodionGrp = $(".accrodion-grp-question");
     accrodionGrp.each(function () {
@@ -192,7 +192,7 @@ if ($(".video-popup").length) {
   // Features
   $('.features_slider').slick({
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 4000,
     dots: true,  // Enable the dots
